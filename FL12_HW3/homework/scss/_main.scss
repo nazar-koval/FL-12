@@ -1,0 +1,240 @@
+
+@mixin myButton{
+    background-color: $firstButtonColor;
+    color: $textColor;
+    font-family: $sansFont;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px; 
+    font-weight: bold;
+    width: 113px;
+    height: 40px;
+    margin-right: 28px;
+}
+@mixin myLinks{
+    padding-left: 67px;
+    color: $textColor;
+}
+@mixin logoMin{
+    width: 300px;
+    padding-top: 10px;
+    img{
+        float: left;
+    }
+    p{ 
+        font-weight: bold;
+        margin-top: 0px;
+        font-size: 23px;
+        margin-left: 55px;
+        span {
+            display: flex;
+            text-align: center;
+            font-size: 10px;
+            line-height: 0px;
+            padding-left: 10px;
+        }
+    }
+}
+
+body {
+    background: $contentBackground;
+    margin: 0px;
+    padding: 0px;
+    header {
+        background-image: url($contentHeaderImage);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0% 0% 40% 50% / 100% 60% 40% 0% ;
+        height: (720px/1.45);
+        .header-wrap{
+            font-family: $sansFont;
+            color: map-get($color,textColor);
+            padding-left: 130px;
+            .landing-logo{
+                @include logoMin;
+            }
+            .header_heading {
+                position: relative;
+                width: 400px;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 38px;
+                margin-bottom: 0px;
+                padding-top: 30px;
+                z-index: 2;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 73px;
+                    background-color: $afterColor;
+                    z-index: -1;
+                    width: 170px;
+                    height: 30px;
+                }
+            }
+            .header_text{
+                width: 800px;
+                white-space: pre-line;
+                margin-top: 0px;
+                font-size: 14px;
+                margin-bottom: 35px;
+                font-family: $specialFont;
+                line-height: 20px;
+            }
+        }        
+        .header_button{
+            @include myButton;
+           }
+        .login{
+            @include myLinks;
+        }          
+    }
+    .section{
+        .section_text{
+            position: relative;
+            text-align: center;
+            font-family: $sansFont;
+            font-size: 25px;
+            color: map-get($color,textColor);
+            font-weight: bold;
+            z-index: 2;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 680px;
+                background-color: $afterColor;
+                z-index: -1;
+                width: 115px;
+                height: 30px;
+            }
+        }
+        .section_card_wrap{
+            color: $textColor;
+            font-family: $sansFont;
+            .section_card{
+                @extend .section_card_wrap;
+                border: 10px;
+                background-color: $blocksColor;
+                width: 800px;
+                height: 225px;
+                padding: 10px;
+                margin: 15px auto;
+                border-radius: 5px;
+                .section_card_img{
+                    float: left;
+                    width: 300px;
+                    height: 225px;
+                }
+                .section_card_heading{
+                    text-align: center;
+                    font-size: 18px;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                    font-weight: bold;
+                }
+                .section_card_text{
+                    text-align: justify;
+                    width: 417px;  
+                    padding-left: 340px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    word-spacing: 2px;
+                    margin-bottom: 7px;
+                    color: $blocksTextColor;
+                }
+                .section_link{
+                    @include myLinks;
+                    padding-left: 215px;
+                    font-size: 14px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .section_banner{
+            background: linear-gradient(30deg, $gradientFirst, $gradientLast);
+            width: 900px;
+            height: 110px;
+            border-radius: 4px;
+            margin: 90px auto;
+            margin-bottom: 0px;
+            text-align: left;
+            font-family: $sansFont;
+            position: sticky;
+            .section_banner_button{
+                @include myButton;
+                float: right;   
+                margin: 50px;   
+                margin-top: 35px;    
+                margin-bottom: 35px;      
+            }
+            .section_banner_text_wrap{
+                position: relative;
+                width: 400px;
+                padding-left: 100px;
+                padding-top: 10px;
+                float: left;
+                z-index: 2;
+                
+                .section_banner_heading{
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: map-get($color,textColor);
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .section_banner_text{
+                    font-size: 14px;
+                    color: $blocksTextColor;
+                    margin-top: 0px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 196px;
+                    bottom: 43px;
+                    background-color:$afterColor;
+                    z-index: -1;
+                    width: 52px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+    .footer{
+        background-color: $blocksColor;
+        margin-top: -60px;
+        color: $textColor;
+        height: 180px;
+        
+        .footer-wrap{
+            font-family: $sansFont;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            padding-top: 20px;
+            .landing-logo{
+                @include logoMin;
+                width: 150px;
+                span{
+                    font-weight: normal;
+                }
+            }
+            .footer_text{
+                text-align: left;
+                font-size: 12px;
+                width: 243px;
+            }
+            .footer-cr{
+                text-align: left;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
