@@ -1,0 +1,188 @@
+body{
+    margin: 0px;
+}
+.navTape{
+    background-color: #fff;
+    height: 30px;
+    color: #555555;
+}
+.navTape h3{
+    float: left;
+    font-size: 120%;
+    text-transform: uppercase;
+    width: 300px;
+    font-weight: bolder;
+    margin-left: 12%;
+    margin-top: 13px;
+}
+.navTape nav{
+    float: right;
+    margin-top: 15px;
+    margin-right: 12%;
+}
+.navTape nav a{
+    text-decoration: none;
+    color: #555555;
+    padding: 16px;
+    font-size: 16px;
+}
+.navTape nav a:hover{
+    color: #bfba55;
+}
+.hero{
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../img/home-bg.jpg") no-repeat center;
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.hero::before{
+    content: " ";
+    position: absolute;
+    background-color: black;
+    opacity: 0.3; 
+    top: 0px;
+    left: 0px;
+    height: 92vh;
+    width: 100%;
+}
+.hero h1{
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.hero p{
+    text-align: center;
+    color: #bfba55;
+    margin-top: 0px;
+    z-index: 2;
+}
+.hero a{
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #777777;
+    border-radius: 30px;
+    background-color: #fff;
+    margin: 30px auto;
+    width: 120px;
+    padding: 8px;
+    font-size: 12px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.blog .firstImage{
+    background:  url("../img/blog-image1.jpg") no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+}
+.blog .secondImage{
+    background:  url("../img/blog-image2.jpg") no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+}
+.blog .thirdImage{
+    background:  url("../img/blog-image3.jpg") no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+}
+.blog .fourthImage{
+    background:  url("../img/blog-image4.jpg") no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+}
+.blog .fifthImage{
+    background:  url("../img/blog-image5.jpg") no-repeat center;
+    background-size: cover;
+    height: 80vh;
+    width: 70%;
+    margin: auto;
+}
+.blogContent{
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.blogContent h1{
+    font-size: 25px;
+}
+.blogContent p{
+    font-size: 16px;
+    color: #8d8c95;
+    line-height: 25px;
+}
+.blogContent .span{
+    display: flex;
+}
+.blogContent .span p{
+    padding-right: 20px;
+    margin-top: 8px;
+}
+.lopezComment, .dennisComment{
+    border-radius: 100px;
+    margin-right: 7px;
+    width: 4%;
+    height: 4%;
+}
+.blogContent a{
+    display: block;
+    text-decoration: none;
+    color: #8d8c95;
+    border: 1px solid #8d8c95;
+    border-radius: 30px;
+    margin-top: 30px;
+    width: 120px;
+    padding: 15px;
+    margin-bottom: 70px;
+}
+.blogContent hr{
+    color: #777;
+    margin: auto;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    
+}
+.infoEPAM, .contactEPAM{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.infoEPAM{
+    width: 32%;
+    line-height: 15px;
+    margin-right: 5%;
+}
+.contactEPAM{
+    margin-left: 5%;
+}
+.infoEPAM h1, .contactEPAM h1{
+    font-size: 25px;
+}
+.infoEPAM p, .contactEPAM p{
+    font-size: 12px;
+}
