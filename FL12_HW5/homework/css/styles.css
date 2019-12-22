@@ -1,0 +1,292 @@
+body {
+  font-family: roboto;
+}
+.post-1 {
+  background: #9d27b0;
+}
+.post-2 {
+  background: #9bb800;
+}
+.post-3 {
+  background: #ed5120;
+}
+.post-4 {
+  background: #9d27b0;
+}
+.post-5 {
+  background: #2d95bb;
+}
+
+/* Your styles go here */
+@media screen and (max-width: 1400px){
+  body {
+    background-color:  #0b192f;
+    max-width: 769px;
+    width: 100%;
+    margin: auto;
+    padding-top: 0px;
+    display: block;
+  }
+  .navTape{
+    background-color: #024161;
+    height: 32px;
+    position: fixed;
+    max-width: 769px;
+    width: 100%;
+    top: 0; 
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navLogo h1{
+    margin: 0px;
+    float: left;
+    font-weight: 200;
+    color: #fff;
+    font-size: 140%;  
+  }
+  .navLogo h1.redLogo{
+    color: red;
+  
+  }
+  .navLogo h1.whiteLogo{
+    padding-left: 2vw;
+  }
+  .navDesktop{
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav{
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav a{ 
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50%;
+    background-color: #024161;
+    display: flex;
+    height: 100%;
+    line-height: 10vh;
+    text-align: center;
+    padding: 10%;  
+  }
+  nav a:hover{ 
+    background-color: #1f52a4;
+  
+  }
+  .navMobile{
+    visibility: hidden;
+  }
+  .navMobile p{
+    margin: 0px;
+  }
+  header{
+    margin-top: 0;
+    background-image: url(../img/post0.jpg);
+    background-size: cover;
+    height: 40%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  header h2{
+    color: #fff;
+    font-weight: 200;
+    font-size: 2em;
+    margin-bottom: 0;
+    padding-top: 22%;
+    padding-left: 3%;
+  }
+  header p{
+    width: 60%;
+    color: #fff;
+    text-align: left;
+    font-size: 0.5em;
+    padding-left: 3%;
+  }
+  main{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+  .mainPublic{
+    float: left;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .public{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    font-weight: 200;
+  }
+  .public h2{
+    font-weight: 200;
+  }
+  img{
+    max-width: 50%;
+    height: auto;
+  }
+  .post-1:hover, .post-2:hover, .post-3:hover, 
+  .post-4:hover, .post-5:hover{
+    opacity: 0.5;
+  }
+  .firstPublic:hover{
+    background-color: #9d27b0;
+    opacity: 0.5;
+  }
+  .secondPublic:hover{
+    background-color: #9bb800;;
+    opacity: 0.5;
+  }
+  .thirdPublic:hover{
+    background-color: #ed5120;
+    opacity: 0.5;
+  }
+  .fourthPublic:hover{
+    background-color: #9d27b0;
+    opacity: 0.5;
+  }
+  .public:nth-child(even){
+    text-align: right;
+  }
+  .public:nth-child(odd){
+    text-align: left;
+  }
+  .news{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .news img{
+    max-width: 100%;
+    height: auto;
+  }
+  .newsPost{
+    background-color: #fff;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .newsPost h3{
+    font-size: 1em;
+    padding: 11px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .newsPost p{
+    font-size: 0.8em;
+    padding: 11px;
+    font-weight: 200;
+    margin-top: 0;
+  }
+  .post-1 p{
+    display: block;
+    width: 90%;
+    padding-left: 4%;
+    margin-right: 0;
+  }
+  .post-1 h2{
+    display: block;
+    width: 90%;
+    padding-left: 4%;
+    padding-top: 8%;
+  }
+  .post-2 p{
+    display: block;
+    width: 90%;
+    padding-right: 2%;
+  }
+  .post-2 h2{
+    display: block;
+    width: 90%;
+    padding-right: 2%;
+    padding-top: 8%;
+  }
+  .post-3 p{
+    display: block;
+    width: 90%;
+    padding-left: 4%;
+    margin-right: 0;
+  }
+  .post-3 h2{
+    display: block;
+    width: 90%;
+    padding-left: 4%;
+    padding-top: 8%;
+  }
+  .post-4 p{
+    display: block;
+    width: 90%;
+    padding-right: 2%;
+  }
+  .post-4 h2{
+    display: block;
+    width: 90%;
+    padding-right: 2%;
+    padding-top: 15%;
+  }
+  .post-5{
+    display: flex;
+    flex-direction: column;
+  }
+  .post-5 p{
+    padding-left: 2%;
+  }
+  .post-5 h2{
+    display: block;
+    width: 90%;
+    padding-left: 2%;
+  }
+  .footer {
+    
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #024161;
+    color: #fff;
+    padding: 1%;
+    margin-top: 1%;
+  }
+  .footerLeft p, .footerRight p{
+    margin: 0;
+  }
+  .footerLeft, .footerRight {
+    margin: 0;
+    font-weight: 200;
+    font-size: 0.8em;  
+  }
+}
+@media (max-width:768px) {
+  body{
+    max-width: 616px;
+  }
+  .navTape{
+    height: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .navMobile{
+    visibility: visible;
+  }
+  .navMobile p{
+    text-align: center;
+  }
+  .navDesktop{
+    display: none;
+  }
+  header{
+    margin-top: 25%;
+  }
+  .public{
+    flex-direction: column;
+  }
+}
