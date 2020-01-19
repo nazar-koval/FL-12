@@ -62,7 +62,6 @@ class Fighter {
 function battle(fighter1, fighter2) {
     if (fighter1.getHealth() > 0 && fighter2.getHealth() > 0) {
         for (; ;) {
-            // debugger
             fighter1.attack(fighter2);
             if (fighter2.getHealth() <= 0) {
                 fighter2.addLoss();
